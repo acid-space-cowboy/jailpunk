@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://characters/PlayersNode.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/ShakingCamera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://characters/EnemyTemplate.tscn" type="PackedScene" id=3]
+
+[node name="TestRoom" type="Node2D"]
+
+[node name="ShakingCamera" parent="." instance=ExtResource( 2 )]
+anchor_mode = 1
+drag_margin_left = 0.4
+drag_margin_top = 0.4
+drag_margin_right = 0.4
+drag_margin_bottom = 0.4
+target = NodePath("../PlayersNode")
+
+[node name="PlayersNode" parent="." instance=ExtResource( 1 )]
+position = Vector2( 132.417, 156.025 )
+
+[node name="EnemyTemplate" parent="." instance=ExtResource( 3 )]
+position = Vector2( 183.941, 289.82 )

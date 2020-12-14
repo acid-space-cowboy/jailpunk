@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/chain/loop.tscn" type="PackedScene" id=1]
+
+[node name="Chain" type="Node2D"]
+
+[node name="Loop" parent="." instance=ExtResource( 1 )]
+
+[node name="Link" parent="Loop" index="2"]
+node_b = NodePath("../../Loop2")
+
+[node name="Loop2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 12, 0 )
+
+[node name="Link" parent="Loop2" index="2"]
+node_b = NodePath("../../Loop3")
+
+[node name="Loop3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 24, 0 )
+
+[node name="Link" parent="Loop3" index="2"]
+node_b = NodePath("../../Loop4")
+
+[node name="Loop4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 36, 0 )
+
+[node name="Link" parent="Loop4" index="2"]
+node_b = NodePath("../../Loop5")
+
+[node name="Loop5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 48, 0 )
+
+[node name="Link" parent="Loop5" index="2"]
+node_b = NodePath("../../Loop6")
+
+[node name="Loop6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 60, 0 )
+
+[node name="Link" parent="Loop6" index="2"]
+node_b = NodePath("../../Loop7")
+
+[node name="Loop7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 72, 0 )
+
+[node name="Link" parent="Loop7" index="2"]
+node_b = NodePath("../../Loop9")
+
+[node name="Loop9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 84, 0 )
+
+[node name="Link" parent="Loop9" index="2"]
+node_b = NodePath("../../Loop10")
+
+[node name="Loop10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96, 0 )
+
+[node name="Link" parent="Loop10" index="2"]
+node_b = NodePath("../../Loop11")
+
+[node name="Loop11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 108, 0 )
+
+[node name="Link" parent="Loop11" index="2"]
+node_b = NodePath("../../Loop8")
+
+[node name="Loop8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 120, 0 )
+
+[editable path="Loop"]
+
+[editable path="Loop2"]
+
+[editable path="Loop3"]
+
+[editable path="Loop4"]
+
+[editable path="Loop5"]
+
+[editable path="Loop6"]
+
+[editable path="Loop7"]
+
+[editable path="Loop9"]
+
+[editable path="Loop10"]
+
+[editable path="Loop11"]
+
+[editable path="Loop8"]

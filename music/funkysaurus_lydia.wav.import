@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/funkysaurus_lydia.wav-d230e2960ceb12b19c868e973d678f35.sample"
+
+[deps]
+
+source_file="res://music/funkysaurus_lydia.wav"
+dest_files=[ "res://.import/funkysaurus_lydia.wav-d230e2960ceb12b19c868e973d678f35.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
